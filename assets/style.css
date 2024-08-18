@@ -3,22 +3,31 @@
   --hover-color: #f5f5f5;
   --active-button: #04aa6d;
   --hover-font-color: #696969;
-  --font-color: #d3d3d3;
+  --font-color: black;
   --page-font: "League Gothic", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
+
+  background-image: url(./images/Background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 body {
-  margin: 0;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
 }
-header {
+
+/* header {
   position:sticky;
   position:-webkit-sticky;
   top:0px;
 }
 header div h1 {
-  font-size: 90px;
+  font-size: 70px;
   margin-top: 0;
   margin-bottom: 0;
   font-family: var(--page-font);
@@ -49,42 +58,84 @@ header div ul li a {
 header div ul li a:hover {
   background-color: var(--hover-color);
   color: var(--hover-font-color);
+} */
+
+/* nav header */
+.nav-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: snow;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  
 }
+
+.nav-btn h1 {
+  font-weight: bolder;
+  margin: 0;
+}
+
+.nav-btn li a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.nav-btn li:hover {
+  font-weight: bold;
+}
+
+
+/* end nav header */
+
+
+
 .section-heading {
   text-align: center;
   font-family: var(--page-font);
   font-size: 40px;
   letter-spacing: 2px;
 }
+
 .information-container {
   display: flex;
   justify-content: space-around;
   font-family: var(--page-font);
+
 }
+
 .information-container img {
   width: 400px;
   border-radius: 20px;
 }
+
 .box-content {
   text-align: center;
   width: 60%;
 }
+
 .box-content h3 {
   font-size: 40px;
 }
+
 .box-content p {
   font-size: 30px;
 }
+
 .aboutme-container {
   padding-top: 50px;
   height: 500px;
+
 }
+
 .contact-container {
-  
+
   text-align: center;
   font-family: var(--page-font);
   font-size: 25px;
 }
+
 .contact-container a {
   font-family: var(--page-font);
   font-size: 25px;
@@ -94,8 +145,9 @@ header div ul li a:hover {
 /* experience */
 .experience-container {
   text-align: center;
-  
+
 }
+
 .experience-box {
   border: solid 5px black;
   font-size: 20px;
@@ -113,58 +165,70 @@ header div ul li a:hover {
 
 
 @media screen and (max-width: 768px) {
-    
-    header div h1 {
-      font-size: 35px;
-    }
-    .nav-btn {
-      display: flex;
-    }
-    header div ul {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-    header div ul li a {
-      font-size: 25px;
-    }
-    .section-heading {
-      text-align: center;
-      font-family: var(--page-font);
-      font-size: 30px;
-      letter-spacing: 2px;
-    }
-    /* aboutme */
-    .aboutme-container {
-      height: 700px;
-      text-align: center;
-    }
-    .information-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .information-container img {
-      width: 200px;
-    }
-    /* seemywork */
-    #seemywork {
-      display: flex;
-      flex-direction: column;
-      height: 700px;
-    }
-    .showcase a img {
-      width: 350px;
-    }
-    .examples-row {
-      flex-direction: column;
-      align-items: center;
-    }
-    .examples-row a img {
-      border-radius: 99999px;
-      width: 200px;
-    }
-    .showcase div a h4 {
-      text-decoration: none;
-      color: pink;
-    }
+
+  header div h1 {
+    font-size: 35px;
+  }
+
+  .nav-btn {
+    display: flex;
+  }
+
+  header div ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  header div ul li a {
+    font-size: 25px;
+  }
+
+  .section-heading {
+    text-align: center;
+    font-family: var(--page-font);
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  /* aboutme */
+  .aboutme-container {
+    height: 700px;
+    text-align: center;
+  }
+
+  .information-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information-container img {
+    width: 200px;
+  }
+
+  /* seemywork */
+  #seemywork {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .showcase a img {
+    width: 350px;
+  }
+
+  .examples-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .examples-row a img {
+    border-radius: 99999px;
+    width: 200px;
+  }
+
+  .showcase div a h4 {
+    text-decoration: none;
+    color: pink;
+  }
 }
