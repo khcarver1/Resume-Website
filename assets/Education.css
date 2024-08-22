@@ -1,0 +1,98 @@
+:root {
+    --header-color: #000000;
+    --hover-color: #f5f5f5;
+    --active-button: #04aa6d;
+    --hover-font-color: #696969;
+    --font-color: #000000;
+    --page-font: "League Gothic", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background-image: url(/assets/images/Background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  
+  }
+  
+  
+  header {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    font-family: var(--page-font);
+  }
+  
+  /* start nav header */
+  
+  .nav-btn {
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #FBFAF5;
+    border-radius: 5px;
+    font-size: 30px;
+    opacity: 90%;
+  }
+  
+  .nav-btn h1 {
+    font-weight: bolder;
+    margin: 0;
+  
+  }
+  
+  
+  .nav-btn li a {
+    text-decoration: none;
+    color: var(--font-color);
+  
+  }
+  
+  .nav-btn li:hover {
+    border-bottom: 2px solid green;
+  
+  }
+  
+  
+  /* end nav header */
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+      scroll-behavior: smooth;
+      background-image: url(/assets/images/Background.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+    }
+  
+    header div h1 {
+      font-size: 35px;
+    }
+  
+    .nav-btn {
+      display: flex;
+  
+    }
+  
+    header div ul {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    header div ul li a {
+      font-size: 25px;
+    }
+  
+    .section-heading {
+      font-family: var(--page-font);
+      font-size: 30px;
+      letter-spacing: 2px;
+    }

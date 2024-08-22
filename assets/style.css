@@ -38,9 +38,8 @@ header {
 }
 
 .nav-btn h1 {
-  font-weight: bolder;
   margin: 0;
-
+letter-spacing: 2px;
 }
 
 
@@ -54,9 +53,6 @@ header {
   border-bottom: 2px solid green;
 
 }
-
-.index-btn:focus {}
-
 /* end nav header */
 
 
