@@ -39,7 +39,7 @@ header {
 
 .nav-btn h1 {
   margin: 0;
-letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 
@@ -53,6 +53,7 @@ letter-spacing: 2px;
   border-bottom: 2px solid green;
 
 }
+
 /* end nav header */
 
 
@@ -62,12 +63,16 @@ letter-spacing: 2px;
   display: flex;
   justify-content: space-around;
   font-family: var(--page-font);
+  overflow: hidden;
+
 
 }
 
 .information-container img {
   width: 400px;
   border-radius: 5px;
+  overflow: hidden;
+
 }
 
 .box-content {
@@ -92,7 +97,6 @@ letter-spacing: 2px;
 
 .aboutme-container {
   padding-top: 50px;
-  height: 500px;
 
 }
 
@@ -163,7 +167,29 @@ letter-spacing: 2px;
 
 
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.copyright-experience-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
+.mySlides {
+  display: none;
+  overflow: hidden;
+}
 
 
 
@@ -207,18 +233,17 @@ letter-spacing: 2px;
   /* aboutme */
   .information-container img {
     margin: 20px;
-
   }
 
   .aboutme-container {
     display: contents;
     width: 100%;
+
   }
 
   .information-container {
     flex-direction: column;
     align-items: center;
-
   }
 
   .information-container img {
@@ -227,6 +252,15 @@ letter-spacing: 2px;
 
   .box-content {
     width: fit-content;
+    height: fit-content;
   }
-
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
