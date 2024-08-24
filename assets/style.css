@@ -157,15 +157,18 @@ header {
 }
 
 .experience-box {
-  display: flex;
+  display: inline-flex;
   border-radius: 5px;
   margin: 44px;
   font-family: var(--page-font);
   font-size: 20px;
 }
 .experience-card-left {
+  display: grid;
+  place-items: center;
+
   width: 400px;
-  
+  padding: 5px;
   border-radius: 5px;
   background-color: #FBFAF5;
   opacity: 80%;
@@ -177,6 +180,7 @@ header {
   background-color: #FBFAF5;
   opacity: 80%;
   margin: 5px;
+  padding: 5px;
 
 }
 

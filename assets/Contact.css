@@ -1,239 +1,290 @@
 :root {
-    --header-color: #000000;
-    --hover-color: #f5f5f5;
-    --active-button: #04aa6d;
-    --hover-font-color: #696969;
-    --font-color: #000000;
-    --page-font: "League Gothic", sans-serif;
+  --header-color: #000000;
+  --hover-color: #f5f5f5;
+  --active-button: #04aa6d;
+  --hover-font-color: #696969;
+  --font-color: #000000;
+
+  --page-font: {
+    "Roboto Mono",
+    monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
   }
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-image: url(/assets/images/Background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+header {
+
+  font-family: var(--page-font);
+}
+
+/* start nav header */
+
+.nav-btn {
+  display: flex;
+  padding: 2px;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: #FBFAF5;
+  font-size: 30px;
+  opacity: 90%;
+}
+
+.nav-btn h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+
+.nav-btn li a {
+  text-decoration: none;
+  color: var(--font-color);
+
+}
+
+.nav-btn li:hover {
+  border-bottom: 2px solid green;
+
+}
+
+/* end nav header */
+
+
+
+
+.information-container {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--page-font);
+  overflow: hidden;
+
+
+}
+
+.information-container img {
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+
+.box-content {
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  background-color: #FBFAF5;
+  border-radius: 5px;
+  opacity: 80%;
+
+
+}
+
+.box-content h3 {
+  font-size: 40px;
+}
+
+.box-content p {
+  font-size: 30px;
+  padding: 5px;
+}
+
+.aboutme-container {
+  padding-top: 50px;
+
+}
+
+
+
+.contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 80%;
+}
+
+.section-heading {
+  text-align: center;
+  font-family: var(--page-font);
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+.contact-container {
+  background-color: #FBFAF5;
+  text-align: center;
+  font-family: var(--page-font);
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+
+
+}
+
+.contact-container a {
+  font-family: var(--page-font);
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+/* experience */
+.experience-container {
+  text-align: center;
+
+}
+
+.experience-box {
+  display: flex;
+  border-radius: 5px;
+  margin: 44px;
+  font-family: var(--page-font);
+  font-size: 20px;
+}
+.experience-card-left {
+  width: 400px;
   
+  border-radius: 5px;
+  background-color: #FBFAF5;
+  opacity: 80%;
+  margin: 5px;
+}
+.experience-card-right {
+  width: 860px;
+  border-radius: 5px;
+  background-color: #FBFAF5;
+  opacity: 80%;
+  margin: 5px;
+
+}
+
+.experience-box p {
+  font-size: 30px;
+}
+
+/* experience end */
+
+
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.copyright-experience-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mySlides {
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
   html {
     scroll-behavior: smooth;
     background-image: url(/assets/images/Background.jpg);
     background-size: cover;
     background-attachment: fixed;
-  
+    margin: 0;
   }
-  
-  
-  header {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 20px;
-    font-family: var(--page-font);
+
+  header div h1 {
+    font-size: 35px;
   }
-  
-  /* start nav header */
-  
+
   .nav-btn {
     display: flex;
-    padding: 2px;
-    justify-content: space-around;
+
+  }
+
+  header div ul {
+    flex-direction: column;
+    width: 100%;
     align-items: center;
-    list-style-type: none;
-    background-color: #FBFAF5;
-    border-radius: 5px;
-    font-size: 30px;
-    opacity: 90%;
   }
-  
-  .nav-btn h1 {
-    margin: 0;
-  letter-spacing: 2px;
+
+  header div ul li a {
+    font-size: 25px;
   }
-  
-  
-  .nav-btn li a {
-    text-decoration: none;
-    color: var(--font-color);
-  
-  }
-  
-  .nav-btn li:hover {
-    border-bottom: 2px solid green;
-  
-  }
-  /* end nav header */
-  
-  
-  
-  
-  .information-container {
-    display: flex;
-    justify-content: space-around;
-    font-family: var(--page-font);
-  
-  }
-  
-  .information-container img {
-    width: 400px;
-    border-radius: 5px;
-  }
-  
-  .box-content {
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    background-color: #FBFAF5;
-    border-radius: 5px;
-    opacity: 80%;
-  
-  
-  }
-  
-  .box-content h3 {
-    font-size: 40px;
-  }
-  
-  .box-content p {
-    font-size: 30px;
-    padding: 5px;
-  }
-  
-  .aboutme-container {
-    padding-top: 50px;
-  
-  }
-  
-  
-  
-  .contact-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 80%;
-  }
-  
+
   .section-heading {
-    text-align: center;
     font-family: var(--page-font);
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin: 0;
-  }
-  
-  
-  .contact-container {
-    background-color: #FBFAF5;
-    text-align: center;
-    font-family: var(--page-font);
-    font-size: 25px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 5px;
-  
-  
-  }
-  
-  .contact-container a {
-    font-family: var(--page-font);
-    font-size: 25px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  /* experience */
-  .experience-container {
-    text-align: center;
-  
-  }
-  
-  .experience-box {
-    background-color: #FBFAF5;
-    border-radius: 5px;
-    margin: 44px;
-    padding: 10px;
-    opacity: 80%;
-    font-family: var(--page-font);
-    font-size: 20px;
-  }
-  
-  .experience-box p {
     font-size: 30px;
+    letter-spacing: 2px;
   }
-  
-  /* experience end */
-  
-  
-  
-  
+
+
+
+  /* aboutme */
+  .information-container img {
+    margin: 20px;
+  }
+
+  .aboutme-container {
+    display: contents;
+    width: 100%;
+
+  }
+
+  .information-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information-container img {
+    width: 200px;
+  }
+
+  .box-content {
+    width: fit-content;
+    height: fit-content;
+  }
+
   .copyright {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
   }
-  
-  
-  
-  
-  @media screen and (max-width: 768px) {
-    html {
-      scroll-behavior: smooth;
-      background-image: url(/assets/images/Background.jpg);
-      background-size: cover;
-      background-attachment: fixed;
-      margin: 0;
-    }
-  
-    header div h1 {
-      font-size: 35px;
-    }
-  
-    .nav-btn {
-      display: flex;
-  
-    }
-  
-    header div ul {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-  
-    header div ul li a {
-      font-size: 25px;
-    }
-  
-    .section-heading {
-      font-family: var(--page-font);
-      font-size: 30px;
-      letter-spacing: 2px;
-    }
-  
-  
-  
-    /* aboutme */
-    .information-container img {
-      margin: 20px;
-  
-    }
-  
-    .aboutme-container {
-      display: contents;
-      width: 100%;
-    }
-  
-    .information-container {
-      flex-direction: column;
-      align-items: center;
-  
-    }
-  
-    .information-container img {
-      width: 200px;
-    }
-  
-    .box-content {
-      width: fit-content;
-    }
-  
-  }
+}
