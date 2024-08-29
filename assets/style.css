@@ -68,10 +68,10 @@ header {
 
 
 .information-container {
-  display: flex;
-  justify-content: space-around;
+
   font-family: var(--page-font);
   overflow: hidden;
+  width: 50%;
 
 
 }
@@ -86,10 +86,10 @@ header {
 .box-content {
   align-items: center;
   text-align: center;
-  width: 60%;
   background-color: #FBFAF5;
   border-radius: 5px;
   opacity: 80%;
+  margin: 10px;
 
 
 }
@@ -105,7 +105,7 @@ header {
 
 .aboutme-container {
   padding-top: 50px;
-
+  display: flex;
 }
 
 
@@ -163,6 +163,7 @@ header {
   font-family: var(--page-font);
   font-size: 20px;
 }
+
 .experience-card-left {
   display: grid;
   place-items: center;
@@ -174,6 +175,7 @@ header {
   opacity: 80%;
   margin: 5px;
 }
+
 .experience-card-right {
   width: 860px;
   border-radius: 5px;
@@ -194,13 +196,7 @@ header {
 
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  text-align: center;
 }
 
 .copyright-experience-page {
@@ -213,10 +209,18 @@ header {
   right: 0;
 }
 
-.mySlides {
-  display: none;
-  overflow: hidden;
+.slide-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.mySlides {
+  width: 50%;
+  border-radius: 5px;
+}
+
 
 
 
@@ -280,6 +284,7 @@ header {
   .box-content {
     width: fit-content;
     height: fit-content;
+    margin: 10px;
   }
 
   .copyright {
@@ -291,4 +296,9 @@ header {
     left: 0;
     right: 0;
   }
+
+  .experience-card-right {
+    display: none;
+  }
+
 }
